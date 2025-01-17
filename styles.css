@@ -19,21 +19,22 @@ header h1 {
     font-size: 2em;
 }
 
-nav ul {
+.main-nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul li {
+.main-nav ul li {
     flex: 1;
 }
 
-nav ul li a {
+.main-nav ul li a {
     display: block;
     color: white;
+    background-color: #007acc;
     text-decoration: none;
     font-weight: bold;
     padding: 15px;
@@ -42,7 +43,7 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+.main-nav ul li a:hover {
     background-color: #005f99;
 }
 
@@ -55,11 +56,11 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.section {
-    margin-bottom: 20px;
+.content-section {
+    display: none;
 }
 
-.section h2 {
+.content-section h2 {
     color: #007acc;
     border-bottom: 2px solid #007acc;
     padding-bottom: 5px;
