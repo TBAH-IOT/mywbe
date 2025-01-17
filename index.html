@@ -10,17 +10,17 @@
 <body>
     <header>
         <h1>Hệ thống tưới tiêu tự động nhóm 14</h1>
-        <nav>
-            <ul>
-                <li><a href="#overview" onclick="toggleSection('overview')">Giới thiệu tổng quan sản phẩm</a></li>
-                <li><a href="#components" onclick="toggleSection('components')">Giới thiệu chi tiết linh kiện mạch</a></li>
-                <li><a href="#code" onclick="toggleSection('code')">Giới thiệu chi tiết Code</a></li>
-                <li><a href="#about" onclick="toggleSection('about')">Về chúng tôi</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section id="overview" class="section" style="display: none;">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" onclick="showSection('overview')">Giới thiệu tổng quan sản phẩm</a></li>
+                <li><a href="#" onclick="showSection('components')">Giới thiệu chi tiết linh kiện mạch</a></li>
+                <li><a href="#" onclick="showSection('code')">Giới thiệu chi tiết Code</a></li>
+                <li><a href="#" onclick="showSection('about')">Về chúng tôi</a></li>
+            </ul>
+        </nav>
+        <section id="overview" class="content-section" style="display: none;">
             <h2>Giới thiệu tổng quan sản phẩm</h2>
             <img src="path/to/your/overview-image.jpg" alt="Ảnh tổng quan sản phẩm">
             <ul class="bullet-points">
@@ -29,8 +29,7 @@
                 <li>Nội dung 3</li>
             </ul>
         </section>
-
-        <section id="components" class="section" style="display: none;">
+        <section id="components" class="content-section" style="display: none;">
             <h2>Giới thiệu chi tiết linh kiện mạch</h2>
             <div class="components-list">
                 <div class="component">
@@ -59,8 +58,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="code" class="section" style="display: none;">
+        <section id="code" class="content-section" style="display: none;">
             <h2>Giới thiệu chi tiết Code</h2>
             <div class="code-section">
                 <div class="code-container">
@@ -77,8 +75,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="about" class="section" style="display: none;">
+        <section id="about" class="content-section" style="display: none;">
             <h2>Về chúng tôi</h2>
             <p>Thông tin về chúng tôi</p>
         </section>
