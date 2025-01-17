@@ -1,9 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('path/to/your/forest-background.jpg'); /* Đường dẫn tới hình nền khu rừng */
-    background-size: cover;
-    background-attachment: fixed;
-    color: #333;
+    background-color: #4e342e; /* Màu nâu đậm */
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +33,7 @@ header h1 {
 .main-nav ul li a {
     display: block;
     color: white;
-    background-image: url('path/to/your/wood-texture.jpg'); /* Đường dẫn tới hình nền khúc gỗ */
+    background-color: #6d4c41; /* Màu nâu đậm cho các khúc gỗ */
     text-decoration: none;
     font-weight: bold;
     padding: 15px;
@@ -45,14 +43,14 @@ header h1 {
 }
 
 .main-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #5d4037; /* Màu nâu đậm hơn khi hover */
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -62,26 +60,9 @@ main {
 }
 
 .content-section h2 {
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
+    color: #ffcc80;
+    border-bottom: 2px solid #ffcc80;
     padding-bottom: 5px;
-}
-
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.image-container {
-    text-align: center;
-}
-
-.image-container img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 footer {
