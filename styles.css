@@ -65,22 +65,18 @@ main {
     padding-bottom: 5px;
 }
 
-.components-list, .code-section {
+.images {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
-.component, .code-container {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.image-container {
     text-align: center;
 }
 
-.component img, .code-container img {
+.image-container img {
     max-width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
