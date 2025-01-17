@@ -65,6 +65,38 @@ main {
     padding-bottom: 5px;
 }
 
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .main-nav ul li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .content-section h2 {
+        font-size: 1.5em;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
