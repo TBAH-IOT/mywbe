@@ -7,46 +7,140 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Thiết Bị Tự Động Tưới Nước</h1>
-        
-        <div class="section">
-            <h2>Cấu tạo 1</h2>
-            <button class="toggle-button" onclick="toggleDetails('details1')">Xem chi tiết</button>
-            <div id="details1" class="details">
-                <p>Thông tin chi tiết về cấu tạo 1.</p>
-                <img src="image1.jpg" alt="Cấu tạo 1">
+    <header>
+        <h1>My Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Giới thiệu tổng quan sản phẩm</a></li>
+                <li><a href="#components">Giới thiệu chi tiết linh kiện mạch</a></li>
+                <li><a href="#code">Giới thiệu chi tiết Code</a></li>
+                <li><a href="#about">Về chúng tôi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="overview" class="section">
+            <h2>Giới thiệu tổng quan sản phẩm</h2>
+            <div class="upload-container">
+                <input type="file" id="overview-image" name="overview-image" accept="image/*">
+                <img id="overview-img-preview" src="#" alt="Ảnh tổng quan sản phẩm" style="display:none;">
             </div>
-        </div>
-        
-        <div class="section">
-            <h2>Cấu tạo 2</h2>
-            <button class="toggle-button" onclick="toggleDetails('details2')">Xem chi tiết</button>
-            <div id="details2" class="details">
-                <p>Thông tin chi tiết về cấu tạo 2.</p>
-                <img src="image2.jpg" alt="Cấu tạo 2">
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Cấu tạo 3</h2>
-            <button class="toggle-button" onclick="toggleDetails('details3')">Xem chi tiết</button>
-            <div id="details3" class="details">
-                <p>Thông tin chi tiết về cấu tạo 3.</p>
-                <img src="image3.jpg" alt="Cấu tạo 3">
-            </div>
-        </div>
-    </div>
+            <ul class="bullet-points">
+                <li><input type="text" placeholder="Điền nội dung tại đây"></li>
+                <li><input type="text" placeholder="Điền nội dung tại đây"></li>
+                <li><input type="text" placeholder="Điền nội dung tại đây"></li>
+            </ul>
+        </section>
 
+        <section id="components" class="section">
+            <h2>Giới thiệu chi tiết linh kiện mạch</h2>
+            <div class="components-list">
+                <div class="component">
+                    <input type="file" id="component1-image" name="component1-image" accept="image/*">
+                    <img id="component1-img-preview" src="#" alt="Linh kiện 1" style="display:none;">
+                    <textarea placeholder="Ghi chú về linh kiện 1"></textarea>
+                </div>
+                <div class="component">
+                    <input type="file" id="component2-image" name="component2-image" accept="image/*">
+                    <img id="component2-img-preview" src="#" alt="Linh kiện 2" style="display:none;">
+                    <textarea placeholder="Ghi chú về linh kiện 2"></textarea>
+                </div>
+                <div class="component">
+                    <input type="file" id="component3-image" name="component3-image" accept="image/*">
+                    <img id="component3-img-preview" src="#" alt="Linh kiện 3" style="display:none;">
+                    <textarea placeholder="Ghi chú về linh kiện 3"></textarea>
+                </div>
+                <div class="component">
+                    <input type="file" id="component4-image" name="component4-image" accept="image/*">
+                    <img id="component4-img-preview" src="#" alt="Linh kiện 4" style="display:none;">
+                    <textarea placeholder="Ghi chú về linh kiện 4"></textarea>
+                </div>
+                <div class="component">
+                    <input type="file" id="component5-image" name="component5-image" accept="image/*">
+                    <img id="component5-img-preview" src="#" alt="Linh kiện 5" style="display:none;">
+                    <textarea placeholder="Ghi chú về linh kiện 5"></textarea>
+                </div>
+                <div class="component">
+                    <input type="file" id="component6-image" name="component6-image" accept="image/*">
+                    <img id="component6-img-preview" src="#" alt="Linh kiện 6" style="display:none;">
+                    <textarea placeholder="Ghi chú về linh kiện 6"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section id="code" class="section">
+            <h2>Giới thiệu chi tiết Code</h2>
+            <div class="code-section">
+                <div class="code-container">
+                    <input type="file" id="code1-image" name="code1-image" accept="image/*">
+                    <img id="code1-img-preview" src="#" alt="Code 1" style="display:none;">
+                    <textarea placeholder="Ghi chú về code 1"></textarea>
+                </div>
+                <div class="code-container">
+                    <input type="file" id="code2-image" name="code2-image" accept="image/*">
+                    <img id="code2-img-preview" src="#" alt="Code 2" style="display:none;">
+                    <textarea placeholder="Ghi chú về code 2"></textarea>
+                </div>
+                <div class="code-container">
+                    <input type="file" id="code3-image" name="code3-image" accept="image/*">
+                    <img id="code3-img-preview" src="#" alt="Code 3" style="display:none;">
+                    <textarea placeholder="Ghi chú về code 3"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Về chúng tôi</h2>
+            <textarea placeholder="Thông tin về chúng tôi"></textarea>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Web. All rights reserved.</p>
+    </footer>
+    
     <script>
-        function toggleDetails(id) {
-            var details = document.getElementById(id);
-            if (details.style.display === "none" || details.style.display === "") {
-                details.style.display = "block";
-            } else {
-                details.style.display = "none";
+        function readURL(input, previewId) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var preview = document.getElementById(previewId);
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
             }
         }
+
+        document.getElementById('overview-image').onchange = function() {
+            readURL(this, 'overview-img-preview');
+        };
+        document.getElementById('component1-image').onchange = function() {
+            readURL(this, 'component1-img-preview');
+        };
+        document.getElementById('component2-image').onchange = function() {
+            readURL(this, 'component2-img-preview');
+        };
+        document.getElementById('component3-image').onchange = function() {
+            readURL(this, 'component3-img-preview');
+        };
+        document.getElementById('component4-image').onchange = function() {
+            readURL(this, 'component4-img-preview');
+        };
+        document.getElementById('component5-image').onchange = function() {
+            readURL(this, 'component5-img-preview');
+        };
+        document.getElementById('component6-image').onchange = function() {
+            readURL(this, 'component6-img-preview');
+        };
+        document.getElementById('code1-image').onchange = function() {
+            readURL(this, 'code1-img-preview');
+        };
+        document.getElementById('code2-image').onchange = function() {
+            readURL(this, 'code2-img-preview');
+        };
+        document.getElementById('code3-image').onchange = function() {
+            readURL(this, 'code3-img-preview');
+        };
     </script>
 </body>
 </html>
