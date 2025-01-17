@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máy Tưới Nước Tự Động</title>
+    <title>My Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Máy Tưới Nước Tự Động</h1>
-        <p>Thiết bị tưới nước tự động dựa trên cảm biến độ ẩm của đất giúp tiết kiệm nước và đảm bảo cây trồng luôn được cung cấp đủ nước.</p>
-        <img src="auto-watering-system.jpg" alt="Hình ảnh máy tưới nước tự động">
-        <h2>Cấu tạo của thiết bị</h2>
-        <ul>
-            <li>Cảm biến độ ẩm của đất</li>
-            <li>Vi điều khiển (Arduino, ESP8266, v.v.)</li>
-            <li>Van điện từ</li>
-            <li>Máy bơm nước</li>
-            <li>Hệ thống cấp nước</li>
-            <li>Nguồn điện</li>
-        </ul>
-        <h2>Mã QR để truy cập vào trang web</h2>
-        <img src="qrcode.png" alt="Mã QR">
+        <h1>Thiết Bị Tự Động Tưới Nước</h1>
+        
+        <div class="section">
+            <h2>Cấu tạo 1</h2>
+            <button class="toggle-button" onclick="toggleDetails('details1')">Xem chi tiết</button>
+            <div id="details1" class="details">
+                <p>Thông tin chi tiết về cấu tạo 1.</p>
+                <img src="image1.jpg" alt="Cấu tạo 1">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Cấu tạo 2</h2>
+            <button class="toggle-button" onclick="toggleDetails('details2')">Xem chi tiết</button>
+            <div id="details2" class="details">
+                <p>Thông tin chi tiết về cấu tạo 2.</p>
+                <img src="image2.jpg" alt="Cấu tạo 2">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Cấu tạo 3</h2>
+            <button class="toggle-button" onclick="toggleDetails('details3')">Xem chi tiết</button>
+            <div id="details3" class="details">
+                <p>Thông tin chi tiết về cấu tạo 3.</p>
+                <img src="image3.jpg" alt="Cấu tạo 3">
+            </div>
+        </div>
     </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
