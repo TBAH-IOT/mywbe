@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff; /* Nền xanh nhạt */
@@ -65,36 +64,6 @@ main {
     padding-bottom: 5px;
 }
 
-.upload-container {
-    margin-bottom: 10px;
-}
-
-.upload-container input[type="file"] {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.upload-container img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.bullet-points {
-    list-style: none;
-    padding: 0;
-}
-
-.bullet-points li {
-    margin-bottom: 10px;
-}
-
-.bullet-points input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 .components-list, .code-section {
     display: flex;
     flex-wrap: wrap;
@@ -114,14 +83,6 @@ main {
     max-width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
-}
-
-.component textarea, .code-container textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
 }
 
 footer {
